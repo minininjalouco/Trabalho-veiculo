@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ExcluirOperadorController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Menu" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="381.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="221.0" layoutY="24.0" text="Excluir Operador">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="138.0" layoutY="117.0" text="Operador">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboOperador" layoutX="225.0" layoutY="117.0" onAction="#initialize" prefWidth="150.0" />
+            <Button layoutX="221.0" layoutY="202.0" mnemonicParsing="false" onAction="#voltarAoMenu" text="Voltar" />
+            <Button layoutX="323.0" layoutY="202.0" mnemonicParsing="false" onAction="#excluirOperador" text="Excluir" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

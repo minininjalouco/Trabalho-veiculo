@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.EditarMotoristaController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#voltarAoMenu" text="Menu" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane prefHeight="391.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="229.0" layoutY="20.0" text="Editar Motorista">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="79.0" text="Selecione o  Motorista">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="402.0" layoutY="323.0" mnemonicParsing="false" onAction="#editarMotorista" text="Salvar" />
+            <TextField fx:id="campoNome" layoutX="244.0" layoutY="127.0" prefHeight="25.0" prefWidth="209.0" />
+            <TextField fx:id="campoEndereco" layoutX="245.0" layoutY="163.0" prefHeight="25.0" prefWidth="209.0" />
+            <TextField fx:id="campoCnh" layoutX="245.0" layoutY="200.0" prefHeight="25.0" prefWidth="209.0" />
+            <TextField fx:id="campoCategoria" layoutX="245.0" layoutY="239.0" prefHeight="25.0" prefWidth="209.0" />
+            <ComboBox fx:id="comboMotoristas" layoutX="244.0" layoutY="77.0" prefHeight="25.0" prefWidth="209.0" />
+            <Label layoutX="139.0" layoutY="131.0" text="Nome" />
+            <Label layoutX="139.0" layoutY="167.0" text="Endereço" />
+            <Label layoutX="139.0" layoutY="204.0" text="CNH" />
+            <Label layoutX="139.0" layoutY="243.0" text="Categoria" />
+            <TextField fx:id="campoSetor" layoutX="244.0" layoutY="274.0" prefHeight="25.0" prefWidth="209.0" />
+            <Button layoutX="245.0" layoutY="323.0" mnemonicParsing="false" onAction="#voltarAoMenu" text="Cancelar" />
+            <Label layoutX="150.0" layoutY="278.0" text="Setor" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

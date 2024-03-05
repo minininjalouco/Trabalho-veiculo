@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.BuscaController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#voltarAoMenu" text="Menu" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="475.0" prefWidth="728.0">
+         <children>
+            <Label layoutX="224.0" layoutY="14.0" text="Buscar Registros">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="57.0" text="Data:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="data" layoutX="206.0" layoutY="57.0" />
+            <Button layoutX="425.0" layoutY="57.0" mnemonicParsing="false" onAction="#buscaRegistro" text="Buscar" />
+            <Button layoutX="269.0" layoutY="344.0" mnemonicParsing="false" onAction="#voltarAoMenu" text="Voltar" />
+            <TableView fx:id="tabela" layoutX="15.0" layoutY="102.0" prefHeight="232.0" prefWidth="573.0">
+               <columns>
+                  <TableColumn fx:id="colunaCodigo" prefWidth="75.0" text="Código " />
+                  <TableColumn fx:id="colunaDevolucao" prefWidth="128.0" text="Devolução" />
+                  <TableColumn fx:id="colunaRetirada" prefWidth="124.0" text="Retirada" />
+                  <TableColumn fx:id="colunaVeiculo" prefWidth="117.0" text="Veículo" />
+                  <TableColumn fx:id="colunaMotorista" prefWidth="128.0" text="Motorista" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
